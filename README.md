@@ -7,7 +7,7 @@ Official Document: <https://developer.android.com/tools/building/multidex.html>
 
 
 ## Describe
-1. Add multidex dependencie
+* Add multidex dependencie
 ```
 buildscript {
 ...
@@ -17,7 +17,7 @@ buildscript {
 }
 ```
 
-2.  Make multiDexEnabled veriable is true into defaultConfig
+* Make multiDexEnabled veriable is true into defaultConfig
 ```
 defaultConfig {
 ...
@@ -25,7 +25,7 @@ defaultConfig {
     }
 ```
 
-3. Override attachBaseContext method in your Application
+* Override attachBaseContext method in your Application
 ```
 @Override
     protected void attachBaseContext(Context base) {
@@ -36,12 +36,12 @@ defaultConfig {
 
 
 ## Notice
-1. Using 1.0 version of Android Studio above.
-2. Make sure your gradle build tool is 1.0.0 version.
+* Using 1.0 version of Android Studio above.
+* Make sure your gradle build tool is 1.0.0 version.
 ```
 com.android.tools.build:gradle:1.0.0
 ```
-3. Make sure your gradle version above 2.2.1.
+* Make sure your gradle version above 2.2.1.
 
 
 ---
