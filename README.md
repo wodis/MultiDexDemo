@@ -10,7 +10,7 @@ Official Document: <https://developer.android.com/tools/building/multidex.html>
 1、 Add multidex dependencie
 ```
 buildscript {
-...
+    ...
     dependencies {
         classpath 'com.android.tools.build:gradle:1.0.0'
     }
@@ -20,18 +20,18 @@ buildscript {
 2、 Make multiDexEnabled veriable is true into defaultConfig
 ```
 defaultConfig {
-...
-        multiDexEnabled true
-    }
+    ...
+    multiDexEnabled true
+}
 ```
 
 3、 Override attachBaseContext method in your Application
 ```
 @Override
-    protected void attachBaseContext(Context base) {
-        super.attachBaseContext(base);
-        MultiDex.install(this);
-    }
+protected void attachBaseContext(Context base) {
+    super.attachBaseContext(base);
+    MultiDex.install(this);
+}
 ``` 
 
 
